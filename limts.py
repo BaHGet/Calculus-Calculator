@@ -8,6 +8,11 @@ app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'ff04f4eeee67d7a083fe2c278cddca78'
 
+@app.route("/")
+def home():
+    return render_template('my-form.html', title='type formula')
+
+
 @app.route("/", methods=['POST', 'GET'])
 def form():
     if request.method == 'POST':
