@@ -29,7 +29,7 @@ def form():
                 "<h1 " +  "style='font-family:Roboto ,serif;'" + '>' + str(d) +'</h1>')
     
     else:
-        return render_template('./my-form.html', title='type formula')
+        return render_template('my-form.html', title='type formula')
 
 
 
